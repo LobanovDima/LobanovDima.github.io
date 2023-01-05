@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    outline: 2px solid black;
+    box-sizing: border-box;
+}
+.general{
+    width: 1200px;
+    margin: 0 auto;
+	background-color: lightsteelblue;
+}
+p{
+    padding: 5px;
+}
+.grid_1_1_1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_1_1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.grid_2_1{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.grid_ar{
+	display:grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	grid-template-areas:
+	"a b b c"
+	"d d e e"
+	"d d f f"
+	"g g f f"
+	"g g h h"
+	"i i i j"
+	"k l l j"
+	"m m m n"
+	"o p p n"
+	"q p p n";
+}
+.in_grid_1{
+	grid-area: a;
+}
+.in_grid_2{
+	grid-area: b;
+}
+.in_grid_3{
+	grid-area: c;
+}
+.in_grid_4{
+	grid-area: d;
+}
+.in_grid_5{
+	grid-area: e;
+}
+.in_grid_6{
+	grid-area: f;
+}
+.in_grid_7{
+	grid-area: g;
+}
+.in_grid_8{
+	grid-area: h;
+}
+.in_grid_9{
+	grid-area: i;
+}
+.in_grid_10{
+	grid-area: j;
+}
+.in_grid_11{
+	grid-area: k;
+}
+.in_grid_12{
+	grid-area: l;
+}
+.in_grid_13{
+	grid-area: m;
+}
+.in_grid_14{
+	grid-area: n;
+}
+.in_grid_15{
+	grid-area: o;
+}
+.in_grid_16{
+	grid-area: p;
+}
+.in_grid_17{
+	grid-area: q;
+}
