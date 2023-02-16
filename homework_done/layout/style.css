@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@200;400;600;700&family=Open+Sans:wght@400;600&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-size: 14px;
+}
+.slider{
+    background: url(img/Screen_1_BG_Bread.png) no-repeat 50% / cover;
+    position: relative;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.slider::before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+.active::after{
+    content: " ";
+    width: calc(100% + 2px);
+    border-bottom: 2px solid white;
+    position: absolute;
+    left: -1px;
+    bottom: 4px;
+}
+nav>ul{
+    font-size: 0;
+}
+nav li{
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.45px;
+    text-align: right;
+    position: relative;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+.main_text{
+    padding-top: 94px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-align: center;
+}
+h1{
+    font-size: 48px;
+    letter-spacing: 1.2px;
+    line-height: normal;
+}
+.main_text>p{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+.secondary_text{
+    font-size: 18px;
+    padding: 30px 0 36px 0;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.45px;
+}
+.slider_buttons>a{
+    font-weight: 400;
+    display: inline-block;
+    font-size: 14px;
+    padding: 11px 35px;
+    outline: 2px solid white;
+    margin-right: 30px;
+}
+.slider_buttons>a+a{
+    margin-right: 0;
+    color: black;
+    background-color: white;
+}
+.arrow{
+    padding: 120px 0 28px 0;
+    display: flex;
+    justify-content: center;
+}
+.arrow_black{
+    padding: 7px 0 42px 0;
+    display: flex;
+    justify-content: center;
+}
+.arrow>a,.arrow_black>a{
+    width: 40px;
+    height: 22px;
+    background: url(img/arrow_white.svg)  50% no-repeat;
+}
+.arrow_black>a{
+    background: url(img/arrow.svg)  50% no-repeat;
+}
+
+/* inside_bread section */
+
+.inside_bread{
+    background: url(img/background_bread.png) no-repeat 50% / cover;
+    position: relative;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    color: #0f1417;
+}
+.text_inside_bread{
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+}
+.text_inside_bread>h2{
+    letter-spacing: 0.8px;
+    line-height: normal;
+    padding: 44px 0 15px 0;
+}
+.text_inside_bread>p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.35px;
+}
+.separator_wavy{
+    background: url(img/wave.svg) 50% no-repeat;
+    margin-top: 35px;
+    height: 12px;
+}
+.baget_content{
+    position: relative;
+}
+.baget_content>ul{
+    width: 180px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+}
+.left_baget{
+    top: 28px;
+    left: 0;
+}
+.left_baget li{
+    display: inline-block;
+    padding-right: 26px;
+    position: relative;
+}
+.right_baget li{
+    padding-left: 26px;
+    position: relative;
+    display: inline-block;
+}
+.left_baget li::after{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background: url(img/form.svg);
+    position: absolute;
+    top: 12px;
+    right: 2px;
+}
+.left_baget li::before,.right_baget li::before{
+    content: " ";
+    position: absolute;
+}
+.left_baget>.wheat::after{
+    top: 10px;
+}
+.wheat::before{
+    width: 24px;
+    height: 40px;
+    border-top: 1px solid #0f1417;
+    border-right: 1px solid #0f1417;
+    right: -42px;
+    top: 17px;
+    transform: skewX(46deg);
+}
+.grains::before{
+    width: 24px;
+    height: 35px;
+    border-top: 1px solid #0f1417;
+    border-right: 1px solid #0f1417;
+    right: -50px;
+    top: 19px;
+    transform: skewX(57deg);
+}
+.bran::before{
+    width: 24px;
+    height: 15px;
+    border-bottom: 1px solid #0f1417;
+    border-right: 1.5px solid #0f1417;
+    right: -50px;
+    top: 3px;
+    transform: skewX(287deg);
+}
+.salt::before{
+    width: 24px;
+    height: 28px;
+    border-bottom: 1px solid #0f1417;
+    border-right: 1px solid #0f1417;
+    right: -45px;
+    top: -9px;
+    transform: skewX(302deg);
+}
+.right_baget li::after{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background: url(img/form.svg);
+    position: absolute;
+    top: 10px;
+    left: 2px;
+}
+.right_baget>.flour::after{
+    left: -2px;
+}
+.flour::before{
+    width: 24px;
+    height: 40px;
+    border-top: 1px solid #0f1417;
+    border-left: 1px solid #0f1417;
+    left: -45px;
+    top: 17px;
+    transform: skewX(135deg);
+}
+.artifical::before{
+    width: 24px;
+    height: 35px;
+    border-top: 1px solid #0f1417;
+    border-left: 1px solid #0f1417;
+    left: -50px;
+    top: 18px;
+    transform: skewX(303deg);
+}
+.fat::before{
+    width: 24px;
+    height: 15px;
+    border-bottom: 1px solid #0f1417;
+    border-left: 1.5px solid #0f1417;
+    left: -45px;
+    top: 3px;
+    transform: skewX(251deg);
+}
+.sugar::before{
+    width: 24px;
+    height: 28px;
+    border-bottom: 1px solid #0f1417;
+    border-left: 1px solid #0f1417;
+    left: -45px;
+    top: -11px;
+    transform: skewX(58deg);
+}
+.wheat{
+    margin-left: 48px;
+}
+.grains{
+    margin: 16px 0 0 20px;
+}
+.bran{
+    margin: 35px 0 22px 36px;
+}
+.salt{
+    margin-left: 37px;
+}
+.right_baget{
+    right: 0;
+    top: 4px;
+}
+.artifical{
+    margin: 25px 0 27px 40px;
+}
+.fat{
+    margin: 0 0 23px 56px;
+}
+.sugar{
+    margin-left: 55px;
+}
+
+/* range_section */
+
+.range{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #0f1417;
+}
+.range>h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    padding: 57px 0 33px 0;
+}
+.bread_cards{
+    display: flex;
+    justify-content: center;
+}
+.bread_cards>div{
+    height: 272px;
+    width: 160px;
+    box-shadow: 0 6px 9px rgba(2, 6, 18, 0.04);
+    margin: 0 15px;
+    position: relative;
+}
+.bread_cards>div>a>h3{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: 18px;
+    text-align: center;
+    padding: 147px 20px 0 20px;
+}
+.bread_cards>div>a>h3::before{
+    position: absolute;
+    content: " ";
+    width: 110px;
+    height: 110px;
+    left: calc(50% - 55px);
+    top: 19px;
+}
+.round>a>h3::before{
+    background: url(img/round.png);
+}
+.square>a>h3::before{
+    background: url(img/square.png);
+}
+.multigrain>a>h3::before{
+    background: url(img/multigrain.png);
+}
+.raisin_square>a>h3::before{
+    background: url(img/raisin_square.png);
+}
+.bread_cards>div>a>.kcal{
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.25px;
+    line-height: normal;
+    padding: 10px 0 9px 0;
+}
+.bread_cards>div>a>p+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    line-height: normal;
+    padding-bottom: 34px;
+}
