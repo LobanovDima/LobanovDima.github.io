@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.969" height="20.969" viewBox="0 0 39.969 20.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Arrow_Scroll_Down_Icon" data-name="Arrow (Scroll Down) Icon" class="cls-1" d="M801.428,638.417l17.982-17.13a1.865,1.865,0,0,0,0-2.723,2.086,2.086,0,0,0-2.853,0L800,634.335l-16.556-15.769a2.089,2.089,0,0,0-2.855,0,1.864,1.864,0,0,0,0,2.723l17.982,17.129A2.111,2.111,0,0,0,801.428,638.417Z" transform="translate(-780.031 -618)"/>
+</svg>
